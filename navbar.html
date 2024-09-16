@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Navigation Bar</title>
+    <style>
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-right: 20px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: block;
+        }
+        a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+        a[aria-current="page"] {
+            font-weight: bold;
+            border-bottom: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Accessible Navigation Bar -->
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#exhibits">Exhibits</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Example Sections -->
+    <section id="home">
+        <h1>Home</h1>
+        <p>Welcome to the exhibit's homepage.</p>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+        <p>Learn more about this exhibit.</p>
+    </section>
+
+    <section id="exhibits">
+        <h1>Exhibits</h1>
+        <p>Check out the different exhibits.</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Get in touch with us.</p>
+    </section>
+
+</body>
+</html>
