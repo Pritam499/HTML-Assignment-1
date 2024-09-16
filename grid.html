@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid of CEOs and Companies</title>
+  <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 1280px;
+  margin: 64px auto;
+  border-top: 2px solid black;   
+  border-right: 5px solid black;   
+  border-bottom: 10px solid black; 
+  border-left: 3px solid black;   
+  padding: 16px; 
+}
+
+
+    .grid-item {
+      text-align: center;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .grid-item img {
+      width: 100%;
+      border-top: 8px solid transparent;
+    }
+
+    .name {
+      font-weight: bold;
+      padding-top: 8px;
+      font-size: 18px;
+      color: #b71c1c; 
+      padding: 0 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .position {
+      font-weight: normal;
+      font-size: 14px;
+      color: #616161; 
+      padding: 0 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .company-logo {
+      max-height: 48px;
+      margin: 8px auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <!-- Example Item 1 -->
+    <div class="grid-item">
+      <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="Vijay Shekhar Sharma - Paytm">
+      <p class="name">Vijay Shekhar Sharma</p>
+      <p class="position">Founder & CEO</p>
+      <img class="company-logo" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg" alt="Paytm">
+    </div>
+
+    <!-- Example Item 2 -->
+    <div class="grid-item">
+      <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="Kunal Shah">
+      <p class="name">Kunal Shah</p>
+      <p class="position">Founder</p>
+      <img class="company-logo" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png" alt="CRED">
+    </div>
+
+    <!-- Example Item 3 -->
+    <div class="grid-item">
+      <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="Amrish Rau">
+      <p class="name">Amrish Rau</p>
+      <p class="position">CEO</p>
+      <img class="company-logo" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="Pine Labs">
+    </div>
+
+    <!-- Adding Sampad Saini -->
+    <div class="grid-item">
+      <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg">
+      <p class="name">Sampad Saini</p>
+      <p class="position">Co-Founder & CEO</p>
+      <img class="company-logo" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png" alt="instamojo">
+    </div>
+
+  </div>
+
+</body>
+</html>
